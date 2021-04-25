@@ -25,3 +25,22 @@ file['getfoldercontents'] = function(f)
     
     return contents
 end
+
+file['size'] = function(File, Unit, Byte)
+    Units = {'bytes', 'kilobytes', 'megabytes', 'gigabytes'}
+    UnitInt = {1, 1024, 1024^2, 1024^3}
+
+    if Byte then
+        if table.find(Units, Unit) then
+            utf8.len(readfile(File))/UnitInt[table.find(Units, Unit)]
+        else
+            rconsoleerr("Unit doesn't exist / Out of range.")
+        end
+    else
+        if table.find(Units, Unit) then
+            string.len(readfile(File))/UnitInt[table.find(Units, Unit)]
+        else
+            rconsoleerr("Unit doesn't exist / Out of range.")
+        end
+    end
+end
