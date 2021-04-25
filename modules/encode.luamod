@@ -4,7 +4,8 @@ env.encode.library.hash = {}
 encode.library['encode'] = function(Cipher, String)
     local Return = {}
 
-    Return.insert(syn.crypt.random(30)).insert(syn.crypt.random(25))
+    table.insert(Return, syn.crypt.random(30))
+    table.insert(Return, syn.crypt.random(25))
 
     local Encrpyt = syn.crypt.custom.encrypt(
         Cipher,
@@ -12,8 +13,11 @@ encode.library['encode'] = function(Cipher, String)
         Return[2],
         Return[1]
     )
-
-    return Return.insert(Encrpyt).insert(Cipher)
+    
+    table.insert(Return, Encrypt)
+    table.insert(Return, Cipher)
+    
+    return Return
 end
 
 encode.library['decode'] = function(Cipher, Encoded, Key, Nonce)
