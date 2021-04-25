@@ -17,7 +17,7 @@ synapse['listfiles'] = function(Extension)
     Files = {}
 
     for _, v in listfiles('/') do
-        if str(v:split()[2]) == Extension then
+        if tostring(v:split()[2]) == Extension then
             table.insert(Files, v)
         end
     end
