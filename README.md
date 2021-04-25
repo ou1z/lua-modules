@@ -10,3 +10,11 @@ if err then rconsoleprint(string.format([[
     Error: %s
 ]], err)) return end
 ```
+
+lua-modules usage:
+
+```lua
+import 'test'
+
+test("hello") --> prints hello to the console
+```
