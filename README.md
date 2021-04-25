@@ -11,7 +11,7 @@ if err then rconsoleprint(string.format([[
 ]], err)) return end
 ```
 
-lua-modules usage:
+# Usage
 
 ```lua
 import 'requests'
