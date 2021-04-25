@@ -8,6 +8,8 @@ file['show_files'] = function(Extension)
             table.insert(Files, v)
         end
     end
+    
+    return Files
 end
 
 file['folder_contents'] = function(f)
