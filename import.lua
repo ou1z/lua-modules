@@ -1,5 +1,5 @@
 local genv = getgenv() do
-    genv.env = env
+    genv.env = genv
 end
 
 genv.import = function(module)
