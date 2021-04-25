@@ -13,7 +13,7 @@ synapse['get_version'] = function(Version)
     end
 end
 
-synapse['listfiles'] = function(Extension)
+synapse['listfileswithextension'] = function(Extension)
     Files = {}
 
     for _, v in listfiles('/') do
