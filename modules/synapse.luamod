@@ -1,0 +1,6 @@
+env.synapse = {}
+
+synapse['get_hwid'] = function()
+    local res = syn.request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+    return game:GetService("HttpService"):JSONDecode(res).headers['Syn-Fingerprint']
+end
