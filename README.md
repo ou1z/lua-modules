@@ -21,7 +21,7 @@ print(requests.get('https://pastebin.com/raw/VeABrS5f').text) --> outputs "lua-m
 
 ## Questions/Module Requests
 Add my discord!
-[!image]https://discord.c99.nl/widget/theme-2/775962084613423134.png
+https://discord.c99.nl/widget/theme-2/775962084613423134.png
 
 ### Credits
 ```
