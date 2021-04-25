@@ -18,5 +18,3 @@ for _, method in pairs(methods) do
         }
     end
 end
-
-return env
