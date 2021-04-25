@@ -3,7 +3,7 @@ local genv = getgenv() do
 end
 
 genv.import = function(module)
-    assert(not module, 'Missing required argument #1 "module"') 
+    assert(module, 'Missing required argument #1 "module"') 
     local dir = string.format('https://raw.githubusercontent.com/ou1z/lua-modules/main/modules/%s.luamod', module)
     local res = syn.request({
         Url = dir
