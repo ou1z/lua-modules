@@ -18,3 +18,8 @@ import 'requests'
 
 print(requests.get('https://pastebin.com/raw/VeABrS5f').text)
 ```
+
+If you want me to upload any modules so that you can use them add my discord!
+```
+cj!#1390
+```
