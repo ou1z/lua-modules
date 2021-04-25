@@ -22,5 +22,6 @@ print(requests.get('https://pastebin.com/raw/VeABrS5f').text) --> outputs "lua-m
 ## Questions/Module Requests
 Add my discord!
 ```
-cj!#1390
+Tag: cj!#1390
+ID: 775962084613423134
 ```
