@@ -9,7 +9,7 @@ encode.library['encode'] = function(Cipher, String)
     local Encrpyt = syn.crypt.custom.encrypt(
         Cipher,
         String, 
-        Return[1],
+        Return[2],
         Return[1]
     )
 
