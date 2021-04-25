@@ -1,0 +1,17 @@
+env.requests = {}
+
+function requests.get(url, headers)
+    local res = syn.request({
+        Url = url or '',
+        Headers = headers or {}
+    }) 
+    return {
+        text = res.Body,
+        json = function()
+            return game:GetService("HttpService"):JSONDecode(res.Body) 
+        end,
+        headers = res.Headers
+    }
+end
+
+return env
