@@ -31,7 +31,7 @@ synapse['getfoldercontents'] = function(f)
         if isfile(v) then
             contents[v] = readfile(v)
         elseif isfolder(v) then
-            local cs = getfoldercontents(v)
+            local cs = synapse.getfoldercontents(v)
             contents[v] = cs
         end
     end
