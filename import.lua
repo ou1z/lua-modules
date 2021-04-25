@@ -11,7 +11,7 @@ genv.import = function(module)
     local res = syn.request({
         Url = dir
     }).Body
-    if res:find("return") then
+    if loadstring(res) then
         loadstring(res)()
     else
         rconsoleprint(string.format("Failed to import module: %s", module))
