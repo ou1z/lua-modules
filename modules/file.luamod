@@ -4,7 +4,7 @@ file['show_files'] = function(Extension)
     Files = {}
 
     for _, v in listfiles('/') do
-        if tostring(v:split()[2]) == Extension then
+        if tostring(v:split('.')[2]) == Extension then
             table.insert(Files, v)
         end
     end
