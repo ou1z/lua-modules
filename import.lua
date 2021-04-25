@@ -17,3 +17,10 @@ genv.import = function(module)
         rconsoleprint(string.format("Failed to import module: %s", module))
     end
 end
+
+genv.bulk_import = function(...)
+    local modules = {...}
+    for _, module in modules do
+        import(module)
+    end
+end
