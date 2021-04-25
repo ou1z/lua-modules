@@ -8,6 +8,7 @@ genv.import = function(module)
         Url = dir
     }).Body
     if res:find("return") then
+        warn(res)
         loadstring(res)()
     end
 end
