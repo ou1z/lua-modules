@@ -12,6 +12,3 @@ synapse['get_version'] = function(Version)
         return indentifyexecutor()
     end
 end
-
-
-return env
