@@ -19,7 +19,8 @@ import 'requests'
 print(requests.get('https://pastebin.com/raw/VeABrS5f').text) --> outputs "lua-modules is cool"
 ```
 
-If you want me to upload any modules so that you can use them add my discord!
+## Questions/Module Requests
+Add my discord!
 ```
 cj!#1390
 ```
