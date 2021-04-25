@@ -11,7 +11,6 @@ genv.import = function(module)
     local res = syn.request({
         Url = dir
     }).Body
-    warn(res)
     if res:find("return") then
         loadstring(res)()
     else
