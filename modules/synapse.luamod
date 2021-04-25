@@ -5,7 +5,7 @@ synapse['get_hwid'] = function()
     return game:GetService("HttpService"):JSONDecode(res).headers['Syn-Fingerprint']
 end
 
-synapse['version'] = function(Version)
+synapse['get_version'] = function(Version)
     if Version then
         return indentifyexecutor():split(' ')[2]
     else
