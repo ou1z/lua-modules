@@ -1,6 +1,6 @@
 env.file = {}
 
-file['listfileswithextension'] = function(Extension)
+file['showfiles'] = function(Extension)
     Files = {}
 
     for _, v in listfiles('/') do
@@ -10,7 +10,7 @@ file['listfileswithextension'] = function(Extension)
     end
 end
 
-file['getfoldercontents'] = function(f)
+file['foldercontents'] = function(f)
     local files = listfiles(f or '/')
     local contents = {}
     
