@@ -1,7 +1,7 @@
 # lua-modules / Import implimentation for Synapse X.
 
 Put this script in your Synapse X autoexec folder.
-```
+```lua
 local success, err = pcall(function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ou1z/lua-modules/main/import.lua'))()
 end)
