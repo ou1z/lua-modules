@@ -3,7 +3,10 @@ local genv = getgenv() do
 end
 
 genv.import = function(module)
-    assert(module, 'Missing required argument #1 "module"') 
+    if not module then
+        rconsoleprint('Missing required argument #1 "module"')
+        return
+    end
     local dir = string.format('https://raw.githubusercontent.com/ou1z/lua-modules/main/modules/%s.luamod', module)
     local res = syn.request({
         Url = dir
