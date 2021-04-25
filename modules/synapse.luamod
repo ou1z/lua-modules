@@ -4,3 +4,23 @@ synapse['get_hwid'] = function()
     local res = syn.request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
     return game:GetService("HttpService"):JSONDecode(res).headers['Syn-Fingerprint']
 end
+
+synapse['version'] = function(Version)
+    if Version then
+        return indentifyexecutor():split(' ')[2]
+    else
+        return indentifyexecutor()
+    end
+end
+
+synapse['listfiles'] = function(Extension)
+    Files = {}
+
+    for _, v in listfiles('/') do
+        if str(v:split()[2]) == Extension then
+            table.insert(Files, v)
+        end
+    end
+end
+
+return env
