@@ -3,7 +3,7 @@ local env = getgenv() do
 end
 
 env.import = function(module)
-    local dir = string.format('https://raw.githubusercontent.com/ou1z/lua-modules/main/modules/%s.luamod')
+    local dir = string.format('https://raw.githubusercontent.com/ou1z/lua-modules/main/modules/%s.luamod', module)
     local res = syn.request({
         Url = dir
     }).Body
