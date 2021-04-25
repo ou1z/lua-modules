@@ -1,0 +1,5 @@
+function env.test(arg)
+  print(arg)
+end
+
+return env
