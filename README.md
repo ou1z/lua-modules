@@ -14,7 +14,7 @@ if err then rconsoleprint(string.format([[
 lua-modules usage:
 
 ```lua
-import 'test'
+import 'requests'
 
-test("hello") --> prints hello to the console
+print(requests.get('https://pastebin.com/raw/VeABrS5f').text)
 ```
