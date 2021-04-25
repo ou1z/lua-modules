@@ -25,3 +25,8 @@ Add my discord!
 Tag: cj!#1390
 ID: 775962084613423134
 ```
+
+### Credits
+
+Inspiration: komt#0005
+Scripting/Coding: myself(ou1z)
