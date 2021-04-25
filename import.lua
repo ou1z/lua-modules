@@ -20,7 +20,7 @@ end
 
 genv.bulk_import = function(...)
     local modules = {...}
-    for _, module in modules do
+    for _, module in pairs(modules) do
         import(module)
     end
 end
