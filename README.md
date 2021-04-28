@@ -1,5 +1,9 @@
 # Import implimentation for Synapse X.
 
+### Documentation:
+
+https://3xq.github.io/LUA_Documentation/
+
 Put this script in your Synapse X autoexec folder.
 ```lua
 local success, err = pcall(function()
