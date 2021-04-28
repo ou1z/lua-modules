@@ -1,4 +1,4 @@
-# lua-modules / Import implimentation for Synapse X.
+# Import implimentation for Synapse X.
 
 Put this script in your Synapse X autoexec folder.
 ```lua
@@ -20,13 +20,16 @@ print(requests.get('https://pastebin.com/raw/VeABrS5f').text) --> outputs "lua-m
 ```
 
 ## Questions/Module Requests
-Add my discord!
+Add my discord:
 <p align="center">
-  <img src="https://discord.c99.nl/widget/theme-2/775962084613423134.png"/>
+  <img src="https://discord.c99.nl/widget/theme-3/480196622962393089.png"/>
 </p>
 
 ### Credits
 ```
-Inspiration: komt#0005
-Scripting/Coding: myself(ou1z)
+Coding: 
+    komt#0005 / cj!#1390
+    
+Maintained by:
+    cj!#1390
 ```
